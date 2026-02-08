@@ -1,6 +1,6 @@
-Secure Authentication System (made using Python and SQLite)
+#Secure Authentication System (made using Python and SQLite)
 
-WHAT THE PROGRAM DOES:
+## What the program does
 
 This project's purpose is to demonstrate secure coding principles in practice via a locally hosted SQLite database.
 The program gives users the ability to create, delete and view any information that they have entered into the
@@ -19,7 +19,7 @@ threats in authentication systems and how to prevent them. It is intentionally a
 as it has a focus is on secure programming principles.
 
 
-CORE FEATURES:
+## Core features
 
 - User account creation ensuring unique usernames to be used as identifiers
 - Secure user authentication system using usernames and passwords
@@ -32,7 +32,7 @@ CORE FEATURES:
 - A command-line interface is used for all user interactions
 
 
-FILE STRUCTURE:
+## File structure
 
 - main.py
 Used as the starting point for the program and controls overall program flow and user interactions.
@@ -44,7 +44,7 @@ Manages authentication-related logic, such as encryption of sensitive user data 
 Contains all interactions with the SQLite database, including retrieving user information and storing login attempts.
 
 
-SECURITY DESIGN DECISIONS:
+## Security design decisions
 
 - Password Hashing
 Passwords are never stored in plaintext. As an alternative, passwords are hashed before storage
@@ -75,7 +75,7 @@ Care is taken during authentication, ensuring that timing differences during cre
 leak information. This greatly reduces the risk of timing-based attacks.
 
 
-DATABASE DESIGN:
+## Database design
 
 This program uses a locally stored SQLite database to store encrypted user data, authentication data and login attempts.
 Data is separated across tables to allow for easier management, reduce exposure and create clear ownership relations.
@@ -96,7 +96,7 @@ Stores all attempts at authentication, which is used for lockout logic, audit an
 the username of the attempted login, the timestamp of the attempted login and the reason why the login failed.
 
 
-LIMITATIONS:
+## Limitations
 
 - Local only system
 The application does not include any network or web-based functionality as it was only designed with a locally hosted database.
@@ -118,4 +118,5 @@ application. Secure storage solutions for the key such as vault services are not
 
 - Command-line Interface
 The application uses a CLI rather than a GUI, reducing attack surface but also removing features like user interface design.
+
 This allows the focus to remain on secure coding principles instead of intuitive user interface design.
