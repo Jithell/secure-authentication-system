@@ -17,8 +17,8 @@ Additional documentation:
 This project's purpose is to demonstrate secure coding principles in practice via a locally hosted SQLite database.
 The program gives users the ability to create, delete and view any information that they have entered into the
 database after authentication with a username and password system. This was developed as a project to learn
-more about cyber-security principles and apply my current knowledge in a practical environment similar to
-real-world systems, allowing me to explore common security practises such as password hashing and encryption
+more about cyber security principles and apply my current knowledge in a practical environment similar to
+real-world systems, allowing me to explore common security practices such as password hashing and encryption
 
 Sensitive user data is encrypted before being written into the database, and all user passwords are hashed
 with a per-user salt before being written to the database, ensuring plaintext is never used for any sensitive
@@ -132,5 +132,6 @@ application. Secure storage solutions for the key such as vault services are not
 The application uses a CLI rather than a GUI, reducing attack surface but also removing features like user interface design.
 
 This allows the focus to remain on secure coding principles instead of intuitive user interface design.
+
 
 
