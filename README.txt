@@ -1,6 +1,6 @@
 # Secure Authentication System (Python and SQLite)
 
-## security analysis
+## Security Analysis
 
 I conducted a full CIA Triad analysis (Confidentiality, Integrity, Availability) to assess the system's security,
 identify trade-offs, and evaluate real-world risks.
@@ -132,4 +132,5 @@ application. Secure storage solutions for the key such as vault services are not
 The application uses a CLI rather than a GUI, reducing attack surface but also removing features like user interface design.
 
 This allows the focus to remain on secure coding principles instead of intuitive user interface design.
+
 
